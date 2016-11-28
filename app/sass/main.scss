@@ -1,0 +1,523 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+$bgcol: #282a2d;
+$font: "NewBaskervilleC";
+
+html,body{
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.wrapper{
+	max-width: 1440px;
+	min-height: 100%;
+	margin: 0 auto;
+	position: relative;
+	background-color: #eff2f7;
+}
+
+header{
+	width: 100%;
+	height: 80px;
+	background-color: $bgcol;
+	position: relative;
+}
+
+.wrap_header{
+	margin: 0 auto;
+	width: 1260px;
+}
+
+.logo_wrap{
+	display: inline-block;
+	width: 290px;
+	height: 56px;
+	position: relative;
+
+	.logo{
+		width: 41px;
+		height: 56px;
+		margin-top: 12px;
+		margin-left: 10px;
+		display: inline-block;
+	}
+}
+.slogan{
+	display: inline-block;
+	width: 210px;
+	margin-left: 18px;
+	position: relative;
+	top: 0px;
+
+	span:first-child{
+		font-size: 30px;
+		font-family: $font;
+		letter-spacing: 1px;
+		color: white;
+	}
+
+	span:last-child{
+		font-size: 11px;
+		color: #65696f;
+		font-family: 'PT Sans', sans-serif;
+		position: relative;
+		top: -7px;
+	}
+}
+
+.main__block{
+	min-height: 100%;
+	padding-bottom: 60px;
+}
+
+.content_block{
+	width: 1260px;
+	margin: 0 auto;
+}
+
+nav{
+
+	ul{
+		display: inline-block;
+		margin-top: 58px;
+		padding-left: 0;
+
+		li{
+			display: inline;
+
+			a{
+				text-decoration: none;
+				text-transform: uppercase;
+				font: 12px/0px 'PT Sans', sans-serif;
+				font-weight: bold;
+				color: #9fa2a8;
+				margin-right: 26px;
+				word-spacing: 1px;
+
+				&:hover{
+					color: #242526;
+				}
+
+				&:active{
+					font-weight: bold;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+.content{
+	display: block;
+	width: 1280px;
+	font-size: 0px;
+	margin-top: 21px;
+	margin-bottom: 59px;
+
+	.slides{
+		width: 300px;
+		height: 200px;
+		display: inline-block;
+		text-align: center;
+		position: relative;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		overflow: hidden;
+
+			.slide{
+				width: 300px;
+				height: 200px;
+				background-size: cover;
+			}
+
+			.second{
+				background: #313336; 
+				width: 300px;
+				height: 200px;
+
+				.slide_content{
+					width: 260px;
+					margin-left: 20px;
+					margin-top: 37px;
+					text-align: left;
+
+					.info{
+						font-size: 14px;
+						font-family: 'PT Sans', sans-serif;
+						color: #a5a8ad;
+						font-weight: bold;
+						line-height: 25px;
+					}
+
+					.country{
+						font-size: 24px;
+						font-family: $font;
+						color: #fff;
+						position: absolute;
+						bottom: 20px;
+						letter-spacing: 1px;
+					}
+				}
+				
+			}
+
+			.third{
+			     background-image: url(../img/cuba_foto.png);
+
+			     .country{
+					font-size: 24px;
+					font-family: $font;
+					color: #fff;
+					font-weight: 500;
+					position: absolute;
+					bottom: 20px;
+					left: 20px;
+					letter-spacing: 1px;
+				}  
+			}
+
+			.fourth{
+
+				.country{
+					font-size: 24px;
+					font-family: $font;
+					color: #fff;
+					font-weight: 500;
+					position: absolute;
+					bottom: 20px;
+					left: 20px;
+					letter-spacing: 1px;
+				}
+			}
+
+		.overlay{
+			background-color: rgba(3, 21, 36, 0.6);
+			width: 300px;
+			height: 200px;
+			
+			.text{
+				color: #ffffff;
+				font: 36px/200px "NewBaskervilleC";
+			}
+		}
+		
+		.slick-next{
+			background: url('../svg/next_slide.svg');
+			background-size: 21px 21px;
+			width: 21px;
+			height: 21px;
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			border: 0px;
+			opacity: 0.2;
+			&:hover{
+				opacity: 0.4;
+			}
+
+			&:focus{
+				outline: none;
+			}
+
+			&:active{
+				outline: none;
+			}
+		}
+		.slick-prev{
+			background: url(../svg/prev_slide.svg);
+			background-size: 21px 21px;
+			width: 21px;
+			height: 21px;
+			position: absolute;
+			bottom: 20px;
+			right: 57px;
+			border: 0px;
+			opacity: 0.2;
+			z-index: 9;
+			&:hover{
+				opacity: 0.4;
+			}
+
+			&:focus{
+				outline: none;
+			}
+
+			&:active{
+				outline: none;
+			}
+		}
+	}
+
+	.big_picture{
+		width: 620px;
+		height: 420px;
+		background-image: url(../img/big_block.png);
+		background-size: cover;
+		float: right;
+		margin-right: 20px;
+		position: relative;
+
+		.b_country{
+			font-size: 40px;
+			font-family: $font;
+			color: #fff;
+			position: relative;
+			left: 30px;
+			top: 84px;
+		}
+
+		ul{
+			list-style: none;
+			position: relative;
+			top: 116px;
+			left: 45px;
+
+			li{
+				font-size: 19px;
+				font-weight: normal;
+				color: #fff;
+				margin-bottom: 24px;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}
+
+footer{
+	width: 100%;
+	height: 59px;
+	background-color: $bgcol;
+	position: absolute;
+	bottom: 0px;
+	border-top-width: 1px;
+	border-top-color: #c7cacf;
+	border-top-style: solid;
+}
+
+.footer_wrap{
+	margin: 0 auto;
+	width: 1240px;
+}
+
+.date{
+	display: inline-block;
+	
+	span{
+		font: 16px/59px 'PT Sans', sans-serif;
+		color: #5c6066;
+	}
+}
+
+.cp_logo{
+	background-image: url(../img/cp_logo.png);
+	display: inline-block;
+	width: 28px;
+	height: 33px;
+	margin-top: 12px;
+	margin-left: 15px;
+	float: right;
+}
+
+.applicants{
+	display: inline-block;
+	float: right;
+	height: 59px;
+
+	span{
+		font: 12px/59px 'PT Sans', sans-serif;
+		color: #5c6066;
+		letter-spacing: 1px;
+	}
+	
+	.applicants_col{
+		color: #b5b9be;
+	}
+}
+
+
+
+
+/*--------------*/
+
+#slide_1{
+
+	.first{
+		background-image: url(../img/cuba.png);
+	}
+
+	.third{
+		position: relative;
+
+		#go{
+			background-image: url(../img/icon_image_no_hover.png);
+			background-repeat: no-repeat;
+			width: 43px;
+			height: 43px;
+			position: absolute;
+			left: 130px;
+			top: 79px;
+			outline: 0;
+		}
+	}
+
+	.fourth{
+		position: relative;
+
+		#go2{
+			background-image: url(../img/icon_video_no_hover.png);
+			background-repeat: no-repeat;
+			width: 43px;
+			height: 43px;
+			position: absolute;
+			left: 130px;
+			top: 79px;
+			outline: 0;
+		}
+	}
+}
+
+#slide_2{
+
+	.first{
+		background-image: url(../img/russia.png);
+	}
+}
+
+#slide_3{
+
+	.first{
+		background-image: url(../img/england.png);
+	}
+}
+
+#slide_4{
+
+	.first{
+		background-image: url(../img/norway.png);
+	}
+}
+
+#slide_5{
+
+	.first{
+		background-image: url(../img/switzerland.png);
+	}
+}
+
+#slide_6{
+
+	.first{
+		background-image: url(../img/china.png);
+	}
+}
+
+#slide_7{
+
+	.first{
+		background-image: url(../img/germany.png);
+	}
+}
+
+#slide_8{
+
+	.first{
+		background-image: url(../img/japan.png);
+	}
+}
+
+#slide_9{
+
+	.first{
+		background-image: url(../img/australia.png);
+	}
+}
+
+#slide_10{
+
+	.first{
+		background-image: url(../img/india.png);
+	}
+}
+
+#slide_11{
+
+	.first{
+		background-image: url(../img/finland.png);
+	}
+}
+
+#slide_12{
+
+	.first{
+		background-image: url(../img/new_zealand.png);
+	}
+}
+				
+
+/*--------------*/
+
+
+/*модальное окно*/
+
+#modal_form {
+	width: 640px; 
+	height: 480px;
+	background-image: url(../img/photo_modal.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: fixed; 
+	top: 45%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -320px;
+	display: none;
+	opacity: 0;
+	z-index: 11;
+	padding: 20px 10px;
+}
+
+#modal_form2 {
+	width: 640px; 
+	height: 480px;
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -320px;
+	display: none;
+	opacity: 0;
+	z-index: 11;
+}
+
+#modal_form #modal_close, #modal_form2 #modal_close {
+	background-image: url(../img/icon_close.png);
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	top: -30px;
+	right: -30px;
+	cursor: pointer;
+	display: block;
+}
+
+#modal_form #modal_close:hover, #modal_form2 #modal_close:hover{
+	background-image: url(../img/icon_close_hover.png);
+}
+
+#overlay {
+	z-index:10;
+	position:fixed;
+	background-color:#000;
+	opacity:0.8;
+	-moz-opacity:0.8;
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%;
+	top:0;
+	left:0;
+	cursor:pointer;
+	display:none;
+}
